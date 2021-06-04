@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Indie+Flower&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background: radial-gradient(rgb(109, 228, 109) 60%, rgb(27, 160, 56));
+  font-family: "Caveat", cursive;
+}
+.welcome {
+  font-size: 54px;
+  text-align: center;
+  font-weight: 800;
+}
+.gameArea {
+  width: 36vw;
+  height: 36vw;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(rgb(166, 241, 166), rgb(245, 245, 175));
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(18, 1fr);
+  border: 20px solid transparent;
+  border-image: url(/images/border.png) 80 stretch;
+}
+.snakeimage {
+  position: absolute;
+  width: 25vw;
+  height: auto;
+  right: 1vw;
+  bottom: 2vw;
+}
+.snake {
+  background: radial-gradient(rgb(255, 255, 191), rgb(59, 194, 59));
+  border-radius: 40%;
+}
+.head {
+  background: url("./images/face1.png");
+  background-size: 100% 100%;
+}
+.food {
+  background-image: url(./images/apple.png);
+  background-size: contain;
+}
+.scoreboard {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  font-size: 40px;
+}
+.volume {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  cursor: pointer;
+}
