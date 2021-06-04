@@ -24,7 +24,7 @@ body {
   grid-template-columns: repeat(18, 1fr);
   grid-template-rows: repeat(18, 1fr);
   border: 20px solid transparent;
-  border-image: url("/images/border.png") 80 stretch;
+  border-image: url("images/border.png") 80 stretch;
 }
 .snakeimage {
   position: absolute;
